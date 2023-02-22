@@ -4,10 +4,10 @@
 //5 -> 1, 8, 27, 64, 125
 Console.Clear();
 
-Console.WriteLine("Введите число А:");
-int a = Convert.ToInt32(Console.ReadLine());
+//Console.WriteLine("Введите число А:");
+//int a = Convert.ToInt32(Console.ReadLine());
 
-int GetCubeNum(int num)
+void GetCubeNum(int num)
 {
     int result = 0;
     for(int i = 1; i <= num; i++)
@@ -15,8 +15,9 @@ int GetCubeNum(int num)
         result = Convert.ToInt32(Math.Pow(i, 3));    
         Console.WriteLine($"Куб числа  {i} : {result}");     
     }
-    return result;
 }
 
-GetCubeNum(a);
+GetCubeNum(3);
+Console.WriteLine();
+GetCubeNum(5);
 
